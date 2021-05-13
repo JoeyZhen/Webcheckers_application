@@ -1,0 +1,163 @@
+h2 {
+    justify-content: center;
+    display: flex;
+}
+
+.sliderDiv{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: visible;
+    width: 25px;
+    height: 27px;
+    border: 0;
+    background: url('../img/king-piece-red.png');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 27px;
+    overflow: visible;
+    border: 0;
+    background: url('../img/king-piece-red.png');
+    cursor: pointer;
+}
+
+.instructions {
+    text-align: center;
+}
+
+.eloRangeIndicator {
+    text-align: center;
+}
+
+.matchmakingInfo {
+    text-align: center;
+}
+
+.headerAndInstructions {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.submitButton {
+    -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+    -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+    box-shadow:inset 0px -3px 7px 0px #29bbff;
+    background-color:#2dabf9;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #0b0e07;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+}
+.submitButton:hover {
+    background-color:#0688fa;
+}
+.submitButton:active {
+    position:relative;
+    top:1px;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.cancelButton {
+    -moz-box-shadow:inset 0px -3px 7px 0px #d91111;
+    -webkit-box-shadow:inset 0px -3px 7px 0px #d91111;
+    box-shadow:inset 0px -3px 7px 0px #d91111;
+    background-color:#f72e2e;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #0b0e07;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #4a0e0e;
+}
+.cancelButton:hover {
+    background-color:#db1111;
+}
+.cancelButton:active {
+    position:relative;
+    top:1px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #cef;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #cef transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingAnimation {
+    display: flex;
+    justify-content: center;
+}
