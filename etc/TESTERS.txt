@@ -1,0 +1,29 @@
+WebCheckers
+
+An online Checkers game system built in Java 8 and Spark, a web micro-framework.
+
+Team C:
+    Ademide Osunsina
+    Jonathan Pyc
+    Joey Zhen
+    Christian Brady
+    Nathan Harding
+
+Prerequisites
+    Java 8
+    Maven
+
+How to run it
+    Go to the root directory.
+    Execute mvn compile exec:java
+    Open in your browser http://localhost:4567/
+    Start a game and begin playing.
+
+Tests
+    Most of the tests have self-explanatory function names describing
+    what type of conditions are made for each test. Apart from running the
+    tests, the UI has a problem when the user refreshes the window while making a move.
+    This will make the app crash entirely, so we have that user case already.
+
+    Follow the stories and tests prompted in TestersAcceptanceTests.xlsx and fill
+    out the completed/incomplete stories
